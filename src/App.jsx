@@ -1,10 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Link, Outlet } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import './css/App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Movies Lib</h1>
+      <NavBar/>
+      <Outlet/>
     </div>
   )
 }

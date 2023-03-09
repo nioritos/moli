@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-movie { 
+    display: flex;
+    align-items: center;
+}
+
+.search-movie input {
+    height: 1.8rem;
+}

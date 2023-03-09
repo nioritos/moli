@@ -5,8 +5,7 @@ import App from './App'
 import Home from './pages/Home'
 import Movie from './pages/Movie'
 import Search from './pages/Search'
-import './index.css'
-
+import './css/index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
