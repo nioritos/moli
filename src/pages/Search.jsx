@@ -4,10 +4,10 @@ import axios from 'axios';
 import { FaStar } from 'react-icons/fa';
 
 
-const api = process.env.VITE_API;
-const apiKey = process.env.VITE_API_KEY;
-const apiImg = process.env.VITE_IMG;
-const apiSearch = process.env.VITE_SEARCH;
+const api = "https://api.themoviedb.org/3/movie/";
+const apiKey = "api_key=ffe25bc45b7e8096d40d115c27f17f70";
+const apiImg = "https://image.tmdb.org/t/p/w500";
+const apiSearch = "https://api.themoviedb.org/3/search/movie";
 
 import '../css/MovieCard.css'
 
@@ -24,7 +24,7 @@ const Search = () => {
   const getMovies = async (url) => {
     try {
       const response = await axios.get(url);
-    console.log(response.data.results)
+      console.log(response.data.results)
     setSearchedMovies(response.data.results);
     } catch {
       alert("doesn't exist")

@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
 import MovieCard from "../components/MovieCard";
-const api = process.env.VITE_API
-const apiKey = process.env.VITE_API_KEY
+const api = "https://api.themoviedb.org/3/movie/";
+const apiKey = "api_key=ffe25bc45b7e8096d40d115c27f17f70";
+const apiImg = "https://image.tmdb.org/t/p/w500";
+const apiSearch = "https://api.themoviedb.org/3/search/movie";
 import {
   BsGraphUp, BsWallet2, BsHourglassSplit, BsFillFileEarmarkTextFill, BsTypeH1
 } from "react-icons/bs";
